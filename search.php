@@ -19,12 +19,8 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php
-			// Start the loop.
 			while ( have_posts() ) : the_post(); ?>
-
 				<?php get_template_part( 'content', 'search' );
-
-			// End the loop.
 			endwhile;
 
 			// Previous/next page navigation.
